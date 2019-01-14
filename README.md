@@ -1,16 +1,21 @@
 
-## setup & install
+# setup & install
 ```
 % sudo pacman -S rlwrap clojure
 ```
 
-## run
-### repl
+# run & reload
+## repl
 ```
 % clj --main cljs.main --compile hello-clojurescript.core --repl
 ```
 
-### 'prod'
+## reload from repl
+```
+cljs.user=>  (require '[hello-clojurescript.core :as hello] :reload)
+```
+
+## 'prod'
 ```
 % clj -m cljs.main --optimizations advanced -c hello-clojurescript.core
 % clj -m cljs.main --serve
@@ -18,7 +23,3 @@
 
 
 
-## reload from repl
-```
-cljs.user=>  (require '[hello-clojurescript.core :as hello] :reload)
-```
