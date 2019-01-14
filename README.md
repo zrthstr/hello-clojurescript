@@ -5,12 +5,12 @@
 ```
 
 ## run
-###repl
+### repl
 ```
 % clj --main cljs.main --compile hello-clojurescript.core --repl
 ```
 
-###'prod'
+### 'prod'
 ```
 % clj -m cljs.main --optimizations advanced -c hello-clojurescript.core
 % clj -m cljs.main --serve
